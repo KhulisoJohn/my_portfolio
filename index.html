@@ -3,71 +3,160 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
+        <title>Khulyso John | Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <strong>Khulyso John</strong>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#home">Home</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#about">About</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#contact">Contact</a>
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">Khulyso John</div>
+                <button class="hamburger" id="hamburger">☰</button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </header>
-        <hr>
 
         <main>
-            <section id="home">
-                <article>
-                    <h2>Welcome to my portfolio</h2>
-                    <video width="320" height="240" controls>
-                        <source src="assets/myVideo.mp4" type="video/mp4">
-                    </video>
-                </article>
+            <section id="home" class="section hero">
+                <h1>Hi, I'm Khuliso Thavhiwa</h1>
+                <p>
+                    A passionate Software Developer focused on building clean, responsive, and user-friendly web applications.
+                    I enjoy turning ideas into real-world digital solutions using modern web technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#" download class="btn btn-primary">
+                        Download CV
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        View My Work
+                    </a>
+                </div>
             </section>
 
-            <section id="about">
-                <article>
-                    <h2>About Me</h2>
-                    <img src="assets/my_photo.jpeg" alt="My Photo" width="200" height="200">
-                    <p>
-                         My name is Khuliso John Thavhiwa and I am an aspiring software developer.<br>
-                        I am currently learning web development and improving my programming skills every day.<br>
-                        I enjoy building websites using HTML, CSS, JavaScript, and React.<br>
-                        I also like working on personal projects and learning new technologies.<br>
-                        My goal is to become a professional full-stack developer and build real-world applications.<br>
-                    </p>
-                </article>
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <div class="about">
+                    <img src="assets/my_photo.jpg" alt="Profile" class="profile-img">
+                    <div class="about-text">
+                        <p>
+                            I am an aspiring full-stack software developer with a strong passion for building modern,
+                            scalable, and user-friendly web applications.
+                        </p>
+                        <p>
+                            I focus on improving my skills in frontend and backend development using technologies like
+                            HTML, CSS, and JavaScript. I enjoy solving real-world problems through code and
+                            continuously learning new tools and frameworks.
+                        </p>
+                        <p>
+                            My goal is to become a professional software engineer who builds impactful digital solutions
+                            that solve everyday problems.
+                        </p>
+                        <a href="https://github.com/khulisoJohn" target="_blank" class="btn btn-github">
+                            View My GitHub
+                        </a>
+                    </div>
+                </div>
             </section>
-        
-            <section id="contact">
-                <article>
-                    <h2>Contact Us</h2>
-                    <form>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br><br>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </article>
-            </section> 
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Technical</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Git & GitHub</li>
+                            <li>JavaScript (Learning)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="assets/project_1.png" alt="Role Play Game" class="project-img">
+                        <h3>Role-Playing Game</h3>
+                        <p>
+                            This is a role-playing game (RPG) built as part of my learning journey in freeCodeCamp. 
+                            The game allows users to create and control characters, embark on quests,
+                            and engage in various interactions within a text-based environment. 
+                        </p>
+                        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KhulisoJohn/Role-playing-game" target="_blank">GitHub</a>
+                            <a href="https://roleplaying.vercel.app/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/project_2.png" alt="Heart-Trail Animation" class="project-img">
+                        <h3>Heart-Trail Animation</h3>
+                        <p>
+                            A web-based project that creates a heart-shaped trail effect following the user's mouse movement. 
+                            This interactive animation adds a dynamic and engaging experience to any website, making it perfect for special events, 
+                            romantic themes.
+                        </p>
+                        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KhulisoJohn/Heart-Trail-Animation" target="_blank">GitHub</a>
+                            <a href="https://khulisojohn.github.io/Heart-Trail-Animation" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                
+                    <div class="project-card">
+                        <img src="assets/project_3.png" alt="Auto-Text Animation" class="project-img">
+                        <h3>Auto-Text Animation</h3>
+                        <p>
+                            A web-based project that creates an auto-text animation effect, where text is dynamically typed and deleted on the screen. 
+                            This interactive animation adds a visually appealing and engaging element to any website, making it perfect for showcasing key messages, 
+                        </p>
+                        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KhulisoJohn/Auto-Text-Animation" target="_blank">GitHub</a>
+                            <a href="https://khulisojohn.github.io/Auto-Text-Animation/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <form class="form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
         </main>
-        <hr>
 
-        <footer>
-            <a href="https://web.facebook.com/khuisojohn">Facebook</a>
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/khulyso/">LinkedIn</a>
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/khulisoJohn">GitHub</a>
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <i>&copy; 2026 Khuliso John. All rights reserved.</i>
-         </footer>     
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://web.facebook.com/khuisojohn" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/khulyso/" target="_blank">LinkedIn</a>
+                <a href="https://dev.to/khulyso" target="_blank">Dev</a>
+            </div>
+            <p>© 2026 Khulyso John. All rights reserved.</p>
+        </footer>
     </body>
 </html>
